@@ -2,7 +2,7 @@ let sources;
 let isPlaying = false;
 
 let t_pad = 2; // second
-let dB_pad = 6; // dB down
+let dB_pad = 3; // dB down
 
 let trialarray = [
     [0, 1, 0, 0],
@@ -139,8 +139,8 @@ document.querySelector("#play").addEventListener("click", async () => {
         sources[i].buffer = sample;
         sources[i].connect(gainNode[trialarray[trial][i]]).connect(filterNode[trialarray[trial][i]]).connect(ctx.destination);
 
-        var dt_s = ( (sources[0].buffer.duration) * i ) + ( ( t_pad ) * i );
-        var dt_e = ( (sources[0].buffer.duration) * ( i + 1 ) ) + ( ( t_pad ) * i ) + i
+        var dt_s = ( (sources[0].buffer.duration) * i ) + ( ( t_pad ) * i ) + 1;
+        var dt_e = ( ( (sources[0].buffer.duration) * ( i + 1 ) ) + ( ( t_pad ) * i ) + i ) + 1
 
         sources[i].start(dt_s);
         sources[i].stop(dt_e);
