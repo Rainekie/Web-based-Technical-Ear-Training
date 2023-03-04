@@ -140,7 +140,7 @@ document.querySelector("#play").addEventListener("click", async () => {
         sources[i].connect(gainNode[trialarray[trial][i]]).connect(filterNode[trialarray[trial][i]]).connect(ctx.destination);
 
         var dt_s = ( (sources[0].buffer.duration) * i ) + ( ( t_pad ) * i ) + 1;
-        var dt_e = ( ( (sources[0].buffer.duration) * ( i + 1 ) ) + ( ( t_pad ) * i ) + i ) + 1
+        var dt_e = ( ( (sources[0].buffer.duration) * ( i + 1 ) ) + ( ( t_pad ) * i ) + 1 ) + 1
 
         sources[i].start(dt_s);
         sources[i].stop(dt_e);
