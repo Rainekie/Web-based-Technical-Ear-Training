@@ -48,76 +48,23 @@
                 </div>
 
                 <div class="modal-body">
-                    
-                    <div class="explain">
-                        <p >This technical ear training develops the ability of audio engineers to distinguish between changes in
-                            loudness and changes in frequency during stimuli.</p>
-                       <p>You will now listen to a short piece of music three times. Either the first sound source (A) or the second (B)
-                            will be presented with loudness or frequency modulated. Then the last sound source (X) will be presented
-                             either modulated or unmodulated, and you will answer whether the sound source for X was A or B.</p>
-                       <p>First, choose one of the following three modulation conditions and press the start button. 
-                           Immediately after that, music will be played three times. Next, select the bottom radio button A or B, 
-                           and finally press the Send button. The answer will then be displayed.</p>
-                    </div>
-
-                <hr>
-
-                    <p>Select Condition</p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="conditionSelect" id="inlineRadio1"
-                            value="Gain" checked>
-                        <label class="form-check-label" for="inlineRadio1"> Gain Change</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="conditionSelect" id="inlineRadio2"
-                            value="-12dB">
-                        <label class="form-check-label" for="inlineRadio2"> EQ -12dB Change</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="conditionSelect" id="inlineRadio3"
-                            value="-6dB">
-                        <label class="form-check-label" for="inlineRadio3">EQ -6dB Change</label>
-                    </div>
+                    <h3>Select Modulation Condition</h2>
+                    <ul>
+                        <li><a href="./TET1.html">Gain Change - ABX method</a></li>
+                        <li><a href="./TET2.html">Gain Change - AB method</a></li>
+                        <li><a href="./TET3.html">EQ Change</a></li>
+                    </ul>
 
                     <hr>
-
-                    <div class="d-grid gap-2 col-6 mx-auto mb-0">
-                        <button type="button" class="btn btn-primary" id="play">Start</button>
+                    <div>
+                        <p>In case you find any problems with this training, please report them through <a href="https://github.com/Rainekie/Web-based-Technical-Ear-Training/issues">this page</a>.</p>
                     </div>
-
-                    <hr>
-                    <div class="text-center" id="progress">
-                        <div class="btn-group-lg" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-success active" id="p_a">A</button>
-                            <button type="button" class="btn btn-outline-success" id="p_b">B</button>
-                            <button type="button" class="btn btn-outline-success" id="p_x">X</button>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="text-end">
-                        <p>Select Your Answer 🔽</p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="responseSelect" id="inlineRadio1"
-                                value="A" checked>
-                            <label class="form-check-label" for="inlineRadio1"> A</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="responseSelect" id="inlineRadio2"
-                                value="B">
-                            <label class="form-check-label" for="inlineRadio2"> B</label>
-                        </div>
-                        
-                        <div class="mt-3" id="result">
-                            <p>  </p>
-                        </div>
-
-                    </div>
-
                 </div>
 
+
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" id="stop">Submit</button>
+
                 </div>
 
             </div>
@@ -130,5 +77,4 @@
         </div>
       </footer>
 
-    <script src="./main.js"></script>
 </html>
