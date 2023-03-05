@@ -36,9 +36,9 @@ function getRandom(min, max) {
 }
 
 async function setupSample(value) {
-    if (value == "music") {
+    if (value == "Music") {
         var songNum = getRandom(0, 4);
-    } else if (value == "noise") {
+    } else if (value == "Noise") {
         var songNum = 99;
     }
     const response = await fetch(`./audio/${songNum}.wav`);
