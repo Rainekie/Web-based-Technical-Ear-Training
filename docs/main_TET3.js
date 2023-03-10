@@ -135,7 +135,7 @@ document.querySelector("#play").addEventListener("click", async () => {
     let gainNode = [new GainNode(ctx, { gain: Math.pow(10, ((dB_pad * -1) / 20)) }), new GainNode(ctx, { gain: Math.pow(10, ((dBGain - dB_pad) / 20)) })];
 
     // filter
-    let filterNode = [new BiquadFilterNode(ctx, { type: "allpass" }), new BiquadFilterNode(ctx, { type: filtType, frequency: freq, q: 2, gain: filterGain })];
+    let filterNode = [new BiquadFilterNode(ctx, { type: "allpass" }), new BiquadFilterNode(ctx, { type: filtType, frequency: freq, q: 0.5, gain: filterGain })];
 
     answer = freq;
     answer_num = randvals[1];
